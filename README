@@ -1,0 +1,21 @@
+Geïnstalleerd met
+- npm init vite@latest
+- npm install eslint eslint-plugin-react-hooks --save-dev
+- npm init @eslint/config
+  How would you like to use ESLint? => To check syntax and find problems
+  What type of modules does your project use? => JavaScript modules (import/export)
+  Which framework does your project use? => React
+  Does your project use TypeScript? => Yes
+  Where does your code run? => Node
+  What format do you want your config file to be in? => JavaScript
+  Would you like to install them now with npm? Yes
+- Verander .eslintrc.js:
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off"
+    }
